@@ -1,0 +1,353 @@
+/*Global CSS*/
+body, html{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(248,219,219,1) 0%, rgba(229,248,250,1) 90% );
+}
+
+.brand_name{
+    color: white;
+}
+
+.brand_name:hover{
+    color: rgb(163, 172, 182);
+}
+
+nav{
+    width: 100%;
+    position: fixed !important;
+    top: 0;
+    z-index: 1030;
+}
+
+.py-4{
+    margin-top: 10vh;
+}
+
+.nav-link{
+    color: white !important;
+}
+
+.nav-link:hover{
+    color: rgb(163, 172, 182) !important;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(46, 129, 197, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.dropdown-menu:hover{
+    border-color: rgba(0,69,91,1) !important;
+    background-color: white !important;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: white !important;
+}
+
+
+.card-header{
+    font-weight: bold;
+    color: white;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,107,141,1) 0%, rgba(0,69,91,1) 90% );
+}
+
+
+.dashboard_card{
+    width: 100%;
+}
+
+.card{
+    margin-bottom: 10vh;
+}
+
+
+.btn{
+    color: white !important;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,107,141,1) 0%, rgba(0,69,91,1) 90% );
+}
+
+.dash_nav{
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.dash_nav a{
+    margin-right: 20px;
+}
+
+.dash_nav a:hover{
+    color: #166db4;
+    text-decoration: none;
+}
+
+.current{
+    border-bottom: 2px solid rgba(0,69,91,1);
+}
+
+/* Table at Dashboard*/
+
+.profile-db_div, .stats_div{
+    color: rgba(0,69,91,1);
+    text-align: center;
+}
+
+.profile-db_div{
+    margin: 10px;
+}
+
+.profile-db_table{
+    width: 100%;
+}
+
+.head_row{
+    color: red;
+    border: 1px solid rgba(0,69,91,1);
+}
+
+.profile_row{
+    border-right: 1px solid rgba(0,69,91,1);
+    border-left: 1px solid rgba(0,69,91,1);
+    border-bottom: 1px solid rgba(0,69,91,1);
+}
+
+.action{
+    color: red;
+}
+
+.action:hover{
+    color: rgba(0,69,91,1);
+}
+
+.head_row{
+    color: white;
+    background-color: rgba(0,107,141,1);
+}
+
+.add_profile, .edit_profile{
+    width: auto;
+    float: right;
+}
+
+.edit_profile:hover, .add_profile:hover{
+    text-decoration: tomato;
+}
+
+/*Footer*/
+.footer{
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #38acd3;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,107,141,1) 0%, rgba(0,69,91,1) 90% );
+}
+
+.footer_text{
+    margin: 0;
+    padding: 0;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+/*CSS for Home*/
+.name_mid{
+    margin-top: 12em;
+    width: 100%;
+    text-align: center;
+}
+
+.name{
+    width: auto;
+    font-size: 65px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(rgba(0,107,141,1), rgba(0,69,91,1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.desc{
+    font-size: 30px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(rgba(0,107,141,1), rgba(0,69,91,1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.version{
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    background: -webkit-linear-gradient(rgba(0,107,141,1), rgba(0,69,91,1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*CSS for Stats*/
+.stats_div{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.summary_div{
+    width: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    /*padding-left: 3em;
+    border: 1px solid greenyellow;*/
+}
+
+/*.summary1, .summary2, .summary3, .summary4{
+    border: 1px solid purple;
+}*/
+
+.summary{
+    background-color: rgba(0,69,91,1);
+    background-image: linear-gradient( 109.6deg,  rgba(95,175,201,1) 18.9%,  rgba(0,69,91,1) 91.1% );
+    width: 13em;
+    height: 120px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5em;
+    border-radius: 10px;
+    /*border: 1px solid rgba(0,69,91,1);*/
+
+}
+
+.summary:hover{
+    background-color: rgba(0,69,91,1);
+    background-image: radial-gradient( circle 597px at 93% 9.8%,  rgba(255,61,89,1) 1.7%, rgba(252,251,44,1) 97% );
+
+}
+
+.summ_head{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.4em;
+    color: white;
+}
+
+.summ_mid{
+    font-size: 2.1em;
+    font-weight: bolder;
+    color: rgb(27, 27, 27);
+}
+
+.summ_down{
+    font: 1em;
+    color:white;
+    font-weight: bold;
+}
+
+.create_more:hover, .buy_premium:hover{
+    color:dodgerblue;
+}
+
+.summary a:hover{
+    text-decoration: none;
+}
+
+/*Chart*/
+.charts{
+    width: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-radius: 10px;
+    padding-top: 10px;
+}
+
+#barchart{
+    height: 200px;
+}
+
+.bar-chart{
+    margin-left: 20px;
+    border: 1px solid rgba(0,69,91,1);
+    padding-top: 1em;
+    border-radius: 10px;
+}
+
+/**Morris*/
+.chart_text{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.morris-hover{
+    position:absolute;
+    z-index:1000
+}
+.morris-hover.morris-default-style{
+    border-radius:10px;padding:6px;color:#666;
+    background:rgba(255,255,255,0.8);
+    border:solid 2px rgba(230,230,230,0.8);
+    font-family:sans-serif;
+    font-size:12px;
+    text-align:center
+}
+.morris-hover.morris-default-style .morris-hover-row-label{
+    display: none;
+    font-weight:bold;
+    margin:0.25em 0
+}
+.morris-hover.morris-default-style .morris-hover-point{
+    display: none;
+    white-space:nowrap;
+    margin:0.1em 0
+}
+
+/*Create form*/
+.create_form{
+    width: 100%;
+}
+
+.profile_form{
+    width: 100%;
+}
+
+/*Dashboard Tabs*/
+/* Style tab links */
+.tablink {
+    background-color: #555;
+    background-image: linear-gradient( 109.6deg,  rgba(95,175,201,1) 18.9%,  rgba(0,69,91,1) 91.1% );
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 15px;
+    margin-right: 5px;
+    width: 8em;
+    border-radius: 5px;
+}
+
+.tablink:hover {
+    background-color: #777;
+    background-image: linear-gradient( 109.6deg,  rgba(0,69,91,1) 18.9%,  rgba(95,175,201,1) 91.1% );
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    display: none;
+    height: 100%;
+}
+
+.tablink {
+    background-color: #555;
+    background-image: linear-gradient( 109.6deg,  rgba(95,175,201,1) 18.9%,  rgba(0,69,91,1) 91.1% );
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 15px;
+    margin-right: 5px;
+    width: 8em;
+    border-radius: 5px;
+}
+
