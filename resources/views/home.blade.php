@@ -1,5 +1,5 @@
-@extends('layouts.app')
 
+@extends('layouts.app')
 @section('content')
 <div onload="hideProfileDB()" class="container">
     <div class="row justify-content-center">
@@ -10,10 +10,6 @@
                     <button class="tablink" onclick="openDash('stats', this)" id="defaultOpen">Stats</button>
                     <button class="tablink" onclick="openDash('profile-db', this)">Profile-DB</button>
                     <button class="tablink" onclick="openDash('your-profile', this)">Your Profile</button>
-
-                    <!--<a class="stats" href="#">Stats</a>
-                    <a id="profile_db" class="profile_db" href="#">Profile-DB</a>
-                    <a class="add_user" href="{{ url('/profile-DB') }}">+ Add Profile</a>-->
                 </div>
                 <hr>
 
@@ -50,9 +46,11 @@
                         </div>
                     </div>
                     <div class="charts row">
-                        <div class="bar-chart col-lg-4 col-12">
-                            <span class="chart_text">No. of profile creation monthly.</span>
-                            <canvas id="myChart" width="400" height="400"></canvas>
+                        <div class="bar-chart col-lg-8 col-12">
+                            <!--<span class="chart_text">No. of profile creation monthly.</span>-->
+                            {!! $chart->html() !!}
+                            {!! Charts::scripts() !!}
+                            {!! $chart->script() !!}
                         </div>
                     </div>
                 </div>
@@ -91,7 +89,7 @@
 
                 <!--Your Profile Starts Here-->
                 <div id="your-profile" class="tabcontent">
-                    <a class="edit_profile d-none" href="{{ url('/profile-DB') }}">Edit Profile</a>
+                    <a class="edit_profile" href="{{ url('/profile-DB') }}">Edit Profile</a>
                     <center><h3>This section is under construction.</h3></center>
                 </div>
                 <!--Your Profile Ends Here-->
@@ -100,85 +98,11 @@
         </div>
     </div>
 </div>
+
 <script>
-/*$(document).ready(function(){
-    $(".profile-db_div").hide();
-    $(".add_user").hide();
-
-    $(".stats").click(function(){
-        $(".profile-db_div").slideUp("fast");
-        $(".add_user").fadeOut();
-        $(".stats_div").slideDown();
-    });
-
-    $("#profile_db").click(function(){
-        $(".profile-db_div").slideDown("fast");
-        $(".add_user").fadeIn();
-        $(".stats_div").slideUp();
-    });
+/*var app = new Vue({
+    el: '#app',
 });*/
-
-// Bar chart
-var ctx = document.getElementById('myChart').getContext('2d');
-var myChart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-        datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            y: {
-                beginAtZero: true
-            }
-        }
-    }
-});
-
-
-/*// Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
-
-Morris.Bar({
-  element: 'barchart',
-  data: [
-    { y: 'Jan', a: 1},
-    { y: 'Feb', a: 3},
-    { y: 'Mar', a: 3},
-    { y: 'Apr', a: 15},
-    { y: 'May', a: null},
-    { y: 'Jun', a: null},
-    { y: 'Jul', a: null},
-    { y: 'Aug', a: null},
-    { y: 'Sep', a: null},
-    { y: 'Oct', a: null},
-    { y: 'Nov', a: null},
-    { y: 'Dec', a: null}
-  ],
-  xkey: 'y',
-  ykeys: 'a',
-  labels: ['Series A', 'Series B'],
-  barColors: ["rgba(0,69,91,1)", "#1531B2", "#1AB244", "#B29215"]
-});*/
 </script>
 @endsection

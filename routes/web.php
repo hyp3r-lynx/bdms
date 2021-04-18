@@ -11,6 +11,7 @@
 |
 */
 
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -19,10 +20,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Auth::routes();
+Route::get('/profile-DB', 'ProfileDbController@index');
 
-Route::get('/home', 'HomeController@index')->name('home');
-
-Route::get('/profile-DB', function () {
-    return view('profile-DB');
-});
+Route::get('home', 'HomeController@bChart');

@@ -15,7 +15,6 @@
     <script src="{{asset('/js/bootstrap.js')}}" type="text/javascript"></script>
     <script src="{{asset('/js/jquery-3.4.1.min.js')}}" type="text/javascript"></script>
     <script src="{{asset('/js/owl.carousel.min.js')}}" type="text/javascript"></script>
-    <script src="{{ asset('js/morris.js')}}"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -25,14 +24,6 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
-
-    <!--CDN-->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
-    <script src="https://cdnjs.com/libraries/Chart.js"></script>
-
-
 </head>
 <body">
     <div id="app">

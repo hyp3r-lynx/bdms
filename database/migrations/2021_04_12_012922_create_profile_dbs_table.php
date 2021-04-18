@@ -14,11 +14,15 @@ class CreateProfileDbsTable extends Migration
     public function up()
     {
         Schema::create('profile_dbs', function (Blueprint $table) {
-            $table->bigIncrements('sn');
-            $table->bigIncrements('pid');
-            $table->string('name');
+            $table->bigIncrements('id');
+            $table->integer('pid');
+            $table->string('fullname');
             $table->string('email');
-            $table->interger('mobile');
+            $table->string('p_address');
+            $table->string('c_address');
+            $table->integer('mobile');
+            $table->integer('telephone');
+            $table->integer('zip');
             $table->string('created_by');
             $table->timestamps();
         });

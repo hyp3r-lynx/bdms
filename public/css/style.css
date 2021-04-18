@@ -114,7 +114,7 @@ nav{
     color: red;
 }
 
-.action:hover{
+.action:hover, .edit_profile:hover, .add_profile:hover{
     color: rgba(0,69,91,1);
 }
 
@@ -126,11 +126,9 @@ nav{
 .add_profile, .edit_profile{
     width: auto;
     float: right;
+    color: red;
 }
 
-.edit_profile:hover, .add_profile:hover{
-    text-decoration: tomato;
-}
 
 /*Footer*/
 .footer{
@@ -253,20 +251,16 @@ nav{
 /*Chart*/
 .charts{
     width: auto;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    border-radius: 10px;
-    padding-top: 10px;
-}
-
-#barchart{
-    height: 200px;
 }
 
 .bar-chart{
-    margin-left: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
     border: 1px solid rgba(0,69,91,1);
-    padding-top: 1em;
+    padding: 1em;
     border-radius: 10px;
 }
 
@@ -299,13 +293,11 @@ nav{
     margin:0.1em 0
 }
 
-/*Create form*/
-.create_form{
-    width: 100%;
-}
+/*Create Profile*/
 
 .profile_form{
     width: 100%;
+    padding: 2em;
 }
 
 /*Dashboard Tabs*/
@@ -336,18 +328,5 @@ nav{
     height: 100%;
 }
 
-.tablink {
-    background-color: #555;
-    background-image: linear-gradient( 109.6deg,  rgba(95,175,201,1) 18.9%,  rgba(0,69,91,1) 91.1% );
-    color: white;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 5px 10px;
-    font-size: 15px;
-    margin-right: 5px;
-    width: 8em;
-    border-radius: 5px;
-}
+
 
